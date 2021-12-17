@@ -6,7 +6,7 @@ class Matrix
 {
 public:
     Matrix(int n);
-    vector<vector<Cell>> container;
+    std::vector<std::vector<Cell>> container;
 };
 
 #endif // MATRIX_H
