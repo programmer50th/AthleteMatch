@@ -10,7 +10,6 @@ Matrix::Matrix(int n)
     }
 }
 
-<<<<<<< Updated upstream
 void Matrix::dotMul(Matrix m)
 {
     auto itm = m.container.begin();
@@ -26,7 +25,6 @@ void Matrix::dotMul(Matrix m)
     }
 }
 
-<<<<<<< Updated upstream
 void Matrix::findMin(int index)
 {
     if(index==0)//找行最小的
@@ -53,30 +51,7 @@ void Matrix::findMin(int index)
 
     }
 
-=======
-void Matrix::findMin(int index)
-{
-    if(index==0)//找到每一行最小的，并减去
-    {
-        for(int i=0;i<container.size();i++)
-        {
-            int min = container[i][0].weight;
-            for(int j=0;j<container[i].size();i++)
-            {
-
-            }
-        }
-    }
-    else if(index==1)//找到每一列最小的，并减去
-    {
-
-    }
-    else if(index==2)//找到未标记中最小的，并减去
-    {
-
-    }
->>>>>>> Stashed changes
-=======
+}
 void Matrix::print()
 {
     for(int i = 0;i<n;i++)
@@ -88,5 +63,4 @@ void Matrix::print()
         cout << endl;
 
     }
->>>>>>> Stashed changes
 }
