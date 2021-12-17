@@ -6,7 +6,9 @@ class Matrix
 {
 public:
     Matrix(int n);
+    int n;
     std::vector<std::vector<Cell>> container;
+    void dotMul(Matrix m);
 };
 
 #endif // MATRIX_H
