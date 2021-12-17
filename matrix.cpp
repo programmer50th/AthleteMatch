@@ -26,6 +26,7 @@ void Matrix::dotMul(Matrix m)
     }
 }
 
+<<<<<<< Updated upstream
 void Matrix::findMin(int index)
 {
     if(index==0)//找行最小的
@@ -72,6 +73,19 @@ void Matrix::findMin(int index)
     }
     else if(index==2)//找到未标记中最小的，并减去
     {
+
+    }
+>>>>>>> Stashed changes
+=======
+void Matrix::print()
+{
+    for(int i = 0;i<n;i++)
+    {
+        for(int j = 0;j<n;j++)
+        {
+            cout << container[i][j].weight << " " ;
+        }
+        cout << endl;
 
     }
 >>>>>>> Stashed changes
