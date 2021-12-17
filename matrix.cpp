@@ -24,3 +24,31 @@ void Matrix::dotMul(Matrix m)
         ++itm;
     }
 }
+
+void Matrix::findMin(int index)
+{
+    if(index==0)//找行最小的
+    {
+        for(int i=0;i<n;i++)
+        {
+            int min = container[i][0].weight;
+            for(int j=0;j<n;j++)
+            {
+                if(container[i][j].weight<min)
+                    min = container[i][j].weight;
+            }
+            for(int j=0;j<n;j++)
+                 container[i][j].weight -= min;
+        }
+
+    }
+    else if(index==1)//找列最小的
+    {
+
+    }
+    else if(index==2)//找未标记中的最小的
+    {
+
+    }
+
+}
