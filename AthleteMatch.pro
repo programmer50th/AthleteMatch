@@ -9,7 +9,8 @@ CONFIG -= app_bundle
 
 SOURCES += \
         cell.cpp \
-        main.cpp
+        main.cpp \
+        matrix.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -17,4 +18,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    cell.h
+    cell.h \
+    matrix.h
